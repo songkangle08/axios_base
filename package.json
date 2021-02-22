@@ -1,0 +1,24 @@
+{
+  "name": "axios_base",
+  "version": "1.0.0",
+  "description": "- Promise - Ajax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songkangle08/axios_base.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/songkangle08/axios_base/issues"
+  },
+  "homepage": "https://github.com/songkangle08/axios_base#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "json-server": "^0.16.3"
+  }
+}
