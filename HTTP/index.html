@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = {};
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState)
+            if(xhr.readyState === 4){
+                if(xhr.status === 200){
+                    console.log(xhr.response)
+                }
+            }
+        }
+        xhr.open('GET','http://localhost:3000/posts/1',true);
+        xhr.onload = function(){
+            console.log("XMLHttpRequest请求成功完成时触发。",xhr)
+        };
+        xhr.onloadend = function(){
+            console.log("当请求结束时触发, 无论请求成功 ( load) 还是失败 (abort 或 error)。",xhr)
+        }
+        xhr.send(data)
+    </script>
+</body>
+</html>
